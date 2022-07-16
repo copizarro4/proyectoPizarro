@@ -1,0 +1,538 @@
+/* reset */ 
+*{
+    padding:0px ;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/* body */ 
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+    font-family:'Roboto';
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */ 
+header{
+    background-color: rgb(251, 212, 199);
+    justify-content:space-between;
+    position:fixed;
+    width: 100%;   
+    display: flex;  
+}
+header div img{
+    display: flex;
+    width: 40%;
+    align-self: center;
+
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin: 5px 5px 5px 30px;
+    height: 3rem;
+}
+.menu{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+nav ul li a {
+    color:rgb(233, 74, 74);
+    text-decoration: none;
+    font-weight: thin;
+   
+}
+
+/* Contenido Index - maquetado con GRID*/ 
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'uno uno uno uno uno uno'
+  'dos dos dos dos dos dos'
+  'dos dos dos dos dos dos';
+  grid-gap: 30px;
+
+}
+
+.bloque1 { grid-area: uno; }
+.bloque2 { grid-area: dos; }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+.bloque1{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0px;
+    width: 100%; 
+    display: flex;  
+}
+
+.imgBanner{
+    display: block;
+    width: 100%;
+}
+
+.bloque2{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    display: inline;
+}
+
+
+.tituloSecundario{
+    color:rgb(233, 74, 74);
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+    display: flex;
+}
+
+.textoParrafo{
+    color:rgb(77, 77, 77);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-size: small;
+    font-style: thin;
+    width: 50%;
+    text-align: left;
+    display: flex;
+}
+
+.botonPrincipal{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: rgb(251, 212, 199);
+    width:120px;
+    height:30px;
+    border-radius: 20px;
+    text-align:center;
+    box-shadow: 2px 2px rgba(155, 155, 155, 0.253);
+    text-decoration: none;
+    display: flex;
+}
+  
+/* Footer */
+
+.footer{
+    background-color: rgb(233, 74, 74);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 80px;
+    padding: 30px; 
+    font-size: 10;
+    bottom: 0;
+    position: absolute;
+}
+
+body footer ul {
+    align-content: center;
+    justify-content:space-between;
+    gap: 30px;
+    width: 100%;
+    margin: 10px;
+    display:flex;
+
+    
+}
+
+body footer ul li{
+    display: flex;
+    font-size: 10;
+    color:white;
+    text-decoration: none; 
+    margin: 10px;
+}
+
+/* CSS pagina Nuestros Trabajos */
+
+.fotosTortas{
+    padding: 7%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "imagen1 imagen2" 
+                          "imagen3 imagen4";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.foto1 {grid-area: imagen1;
+    display: flex;}
+.foto2 {grid-area: imagen2;
+    display: flex;}
+.foto3 {grid-area: imagen3;
+    display: flex;}
+.foto4 {grid-area: imagen4;
+    display: flex;}
+
+section div img {
+    max-width: 40% ;
+    min-width: 40% ;
+}
+
+
+form{
+    width:60%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+    display: flex;
+    line-height: 150%;
+    
+
+}
+
+form label{
+	display:inline-block;
+    justify-content: space-between;
+    padding: 10px;
+    color:rgb(77, 77, 77);
+    
+}
+
+form input[type="text"],
+form input[type="email"], form input[type="number"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"], form input[type="reset"]{
+	width:30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid rgb(233, 74, 74);
+	border-radius:5px;
+	color:#fff;
+	background-color:rgb(233, 74, 74);
+} 
+
+form input[type="submit"]:hover, form input[type="reset"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid 233, 74, 74;
+	border-radius:3px;
+	background-color:233, 74, 7474;			
+	margin:8px 0;
+	display:block;
+}
+
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+
+
+/* Adaptabilidad Mobile*/
+@media (max-width: 576px) {
+
+     header, nav, ul{
+        flex-direction:column;
+        flex-wrap:wrap;
+        align-items:center;
+        margin:0px;
+        padding:0px;
+      }
+
+    
+    header div img{
+        padding: 10px;
+        display: flex;
+        width: 40%;
+        align-self: center;
+        align-content: center;
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    
+    header{
+     display: flex;
+     width: 100%;   
+     max-width: 100vh;
+       
+    }
+    
+    .bloque1{
+        display: none;
+        }
+    
+    .bloque2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 40%;
+    }
+
+    .textoParrafo{
+        color:rgb(77, 77, 77);
+        display: flex;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-style: thin;
+        width: 80%;
+        text-align: left;
+    }
+
+    .botonPrincipal{
+        font-size: large;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border: none;
+        background-color: rgb(251, 212, 199);
+        width:200px;
+        height:30px;
+        border-radius: 20px;
+        text-align:center;
+        align-content: center;
+        box-shadow: 2px 2px rgba(155, 155, 155, 0.253);
+        text-decoration: none;
+        align-content: center;
+    }
+   
+
+    .footer{
+        background-color: rgb(233, 74, 74);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        width: 100vh;
+        margin-bottom: 0%;
+        font-size: 10;
+        height: 4rem;
+        bottom: 0;
+        flex-direction: column;
+    }
+    
+    body footer ul {
+        display:flex;
+        align-content: center;
+        gap: 0px;
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        
+    }
+    
+    body footer ul li{
+        display: flex;
+        font-size: 10;
+        color:white;
+        text-decoration: none; 
+        margin: 2px;
+        margin-top: 0%;
+        flex-direction: column;
+
+    }
+    .fotosTortas{
+        margin-top: 40%;
+        padding: 5%;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "imagen1"
+                              "imagen2" 
+                              "imagen3"
+                              "imagen4";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+   
+    section div img {
+        max-width: 100% ;
+        min-width: 100% ;
+    }
+
+    
+
+}
+
+/* Adaptabilidad Tablet*/
+
+    @media (min-width: 576px) and (max-width: 992px) {
+    
+    
+        header, nav, ul{
+
+            align-items:center;
+            margin:0px;
+            padding:0px;
+            display: flex;
+            flex-direction:column;
+            flex-wrap:wrap;
+
+          }
+
+        nav ul li{
+            list-style: none;
+            display: flex;
+            gap: 10px;}
+    
+        .bloque1{
+        display: flex;
+        margin-top: 10%;
+        align-self: center;
+        }
+    
+        header div img{
+            padding: 10px;
+            display: flex;
+            width: 40%;
+            align-self: center;
+            align-content: center;
+            margin-left: 30%;
+            margin-top: 10px;
+        }
+        
+        header{
+        background-color: rgb(251, 212, 199);
+        display: flex;
+        width: 100%;     
+        }
+        
+        .bloque2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .textoParrafo{
+            color:rgb(77, 77, 77);
+            display: flex;
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            font-size: 15px;
+            font-style: thin;
+            width: 80%;
+            text-align: left;
+        }
+    
+        .botonPrincipal{
+            font-size: large;
+            display: flex;
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            border: none;
+            background-color: rgb(251, 212, 199);
+            width:200px;
+            height:30px;
+            border-radius: 20px;
+            text-align:center;
+            align-content: center;
+            box-shadow: 2px 2px rgba(155, 155, 155, 0.253);
+            text-decoration: none;
+            align-content: center
+        }
+       
+    
+        .footer{
+            background-color: rgb(233, 74, 74);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            width: 100%;
+            margin-bottom: 0%;
+            margin-top: 10rem;
+            font-size: 10;
+            height: 5rem;
+            bottom: 0;
+            flex-direction: column;
+            position: absolute;
+            
+        }
+        
+        body footer ul {
+            display: flex;
+            align-content: center;
+            gap: 0px;
+            width: 100%;
+            margin: 0px;
+            flex-direction: column;
+            position: absolute;
+        }
+        
+        body footer ul li{
+            display: flex;
+            font-size: 10;
+            color:white;
+            text-decoration: none; 
+            margin: 2px;
+            margin-top: 0%;
+            flex-direction: column;
+        }
+
+        .fotosTortas{
+            margin-top: 40%;
+            padding: 5%;
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto;
+            grid-template-areas: "imagen1"
+                                  "imagen2" 
+                                  "imagen3"
+                                  "imagen4";
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+             }
+       
+        section div img {
+            max-width: 100% ;
+            min-width: 100% ;
+        }
+    
+    
+    }
