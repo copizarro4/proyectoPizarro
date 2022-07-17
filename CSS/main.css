@@ -6,7 +6,10 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Urbanist', sans-serif;
+
 }
+
+
 
 /* barra de navegacion */ 
 
@@ -24,13 +27,20 @@
     justify-content: space-around;
     width: 35rem;
     justify-items: center;
-    align-items: center;
-}
+    margin-top: 1rem;
+    }
 
 
 li a {
     color: rgb(240, 50, 91);
     font-weight: 800;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+li a:hover{
+    color: rgb(240, 50, 91);
 }
 
 
@@ -267,6 +277,37 @@ h2{
 }
 
 
+/* estilos pagina Pedido - BOOSTRAP */ 
+.encabezadoPedido {
+    height: 10rem;
+}
+
+.fotoPaginaPedidos {
+    width: 30%;
+    height: 25rem;
+    background-image: url(../Img/WhatsApp\ Image\ 2022-06-26\ at\ 8.46.26\ PM.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    margin-bottom: 5rem;  
+    margin-left: 3rem;  
+}
+
+.textoPaginaPedido {
+    align-content: center;
+    padding: 5rem;
+}
+
+
+.informacionPedido {
+    align-items: center;
+}
+
+
+
+
+
+
 
 
 /* -- Adaptabilidad Tablet -- */
@@ -431,7 +472,11 @@ h2{
         height: 50rem;
     }
 
+/* pagna Pedidos */ 
 
+    .fotoPaginaPedidos, .encabezadoPedido {
+        display: none
+    }
 
 
     }
