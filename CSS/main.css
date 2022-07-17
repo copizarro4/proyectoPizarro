@@ -145,7 +145,7 @@ h2{
 
 .foto1{
     margin-top:5rem;
-    background-image: url(../img/nuestrostrabajos1.jpg);
+    background-image: url(../Img/nuestrostrabajos1.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
@@ -153,7 +153,7 @@ h2{
 }
 .foto2{
     margin-top:5rem;
-    background-image: url(../img/Torta.jpg);
+    background-image: url(../Img/Torta.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
@@ -161,7 +161,7 @@ h2{
 }
 .foto3{
     margin-top:5rem;
-    background-image: url(../img/nuestrostrabajos3.jpg);
+    background-image: url(../Img/nuestrostrabajos3.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0.3rem;
