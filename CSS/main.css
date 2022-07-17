@@ -3,536 +3,270 @@
     padding:0px ;
     margin:0px;
     box-sizing: border-box;
-}
-
-/* body */ 
-body{
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 100px;
-    font-family:'Roboto';
-    
-    display: flex;
-    flex-direction: column;
-}
-
-/* header */ 
-header{
-    background-color: rgb(251, 212, 199);
-    justify-content:space-between;
-    position:fixed;
-    width: 100%;   
-    display: flex;  
-}
-header div img{
-    display: flex;
-    width: 40%;
-    align-self: center;
-
-}
-.header{
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
-    margin: 5px 5px 5px 30px;
-    height: 3rem;
-}
-.menu{
-    display: flex;
-    gap: 10px;
-    padding: 20px;
-}
-nav ul li{
+    text-decoration: none;
     list-style: none;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* barra de navegacion */ 
+
+.nav {
     display: flex;
-    gap: 10px;
-}
-nav ul li a {
-    color:rgb(233, 74, 74);
-    text-decoration: none;
-    font-weight: thin;
-   
-}
-
-/* Contenido Index - maquetado con GRID*/ 
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-  'uno uno uno uno uno uno'
-  'dos dos dos dos dos dos'
-  'dos dos dos dos dos dos';
-  grid-gap: 30px;
-
-}
-
-.bloque1 { grid-area: uno; }
-.bloque2 { grid-area: dos; }
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  font-size: 30px;
-}
-
-.bloque1{
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0px;
-    width: 100%; 
-    display: flex;  
-}
-
-.imgBanner{
-    display: block;
+    justify-content: space-between;
+    padding: 1.5rem 6rem 1.5rem 6rem;
+    background-color: antiquewhite;
     width: 100%;
+    position: fixed;
 }
 
-.bloque2{
-    color: rgb(255, 255, 255);
-    text-align: left;
-    padding: 20px;
+.ul {
     display: flex;
-    display: inline;
-}
-
-
-.tituloSecundario{
-    color:rgb(233, 74, 74);
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 30px;
-    display: flex;
-}
-
-.textoParrafo{
-    color:rgb(77, 77, 77);
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    font-size: small;
-    font-style: thin;
-    width: 50%;
-    text-align: left;
-    display: flex;
-}
-
-.botonPrincipal{
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: none;
-    background-color: rgb(251, 212, 199);
-    width:120px;
-    height:30px;
-    border-radius: 20px;
-    text-align:center;
-    box-shadow: 2px 2px rgba(155, 155, 155, 0.253);
-    text-decoration: none;
-    display: flex;
-}
-  
-/* Footer */
-
-.footer{
-    background-color: rgb(233, 74, 74);
-    display: flex;
-    align-items: center;
-    align-self: center;
-    width: 100%;
-    height: 80px;
-    padding: 30px; 
-    font-size: 10;
-    bottom: 0;
-    position: absolute;
-}
-
-body footer ul {
-    align-content: center;
-    justify-content:space-between;
-    gap: 30px;
-    width: 100%;
-    margin: 10px;
-    display:flex;
-
-    
-}
-
-body footer ul li{
-    display: flex;
-    font-size: 10;
-    color:white;
-    text-decoration: none; 
-    margin: 10px;
-}
-
-/* CSS pagina Nuestros Trabajos */
-
-.fotosTortas{
-    padding: 7%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "imagen1 imagen2" 
-                          "imagen3 imagen4";
-    justify-content: center;
+    justify-content: space-around;
+    width: 35rem;
     justify-items: center;
     align-items: center;
 }
 
-.foto1 {grid-area: imagen1;
-    display: flex;}
-.foto2 {grid-area: imagen2;
-    display: flex;}
-.foto3 {grid-area: imagen3;
-    display: flex;}
-.foto4 {grid-area: imagen4;
-    display: flex;}
-
-section div img {
-    max-width: 40% ;
-    min-width: 40% ;
+li a {
+    color: rgb(240, 50, 91);
+    font-weight: 800;
 }
 
 
-form{
-    width:60%;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
+div img {
+    width: 10rem;
+}
+
+/* banner */ 
+
+.cajaImagen{
+    background-image: url(/Img/nuestrostrabajos2.jpg);
+    padding: 10rem;
+    height: 80vh;
+    background-size: cover;
+
     display: flex;
-    line-height: 150%;
-    
-
+    align-items: center;
 }
 
-form label{
-	display:inline-block;
-    justify-content: space-between;
-    padding: 10px;
-    color:rgb(77, 77, 77);
-    
+.textoBanner{
+    width: 65%;
 }
 
-form input[type="text"],
-form input[type="email"], form input[type="number"]{
-	width:180px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:8px 0;
-	display:inline-block;
+h1{
+    font-size: 2.5rem;
 }
 
-form input[type="submit"], form input[type="reset"]{
-	width:30%;
+.textoBanner {
+    font-size: 1.1rem;
+    margin-top: 1rem;  
+    color: rgb(240, 50, 91);
+}
+
+.botonBanner{
+    color: rgb(255, 254, 254);
+    background-color:rgb(240, 50, 91);
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.5rem
+}
+
+.informacionHome{
+    padding: 3rem;
+    width: 100%;
+    height: 30hv;
+    color: rgb(240, 50, 91);
+    font-weight: 800;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-around;
+}
+
+h2{
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+}
+
+.pedidosAnticipados, .enviosMoto, .pedidosPersonalizados
+{
+    text-align: center;
+    padding: 2rem;
+}
+
+/* footer */ 
+
+.footer{
+    padding: 0%;
+    background-color: rgb(240, 50, 91);
+    width: 100%;
+    color: white;
+    height: 4rem;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconosFooter {
+    width: 7rem;
+    align-items: center;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: space-around;
-    flex-direction: row;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid rgb(233, 74, 74);
-	border-radius:5px;
-	color:#fff;
-	background-color:rgb(233, 74, 74);
-} 
-
-form input[type="submit"]:hover, form input[type="reset"]:hover{
-	cursor:pointer;
 }
 
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid 233, 74, 74;
-	border-radius:3px;
-	background-color:233, 74, 7474;			
-	margin:8px 0;
-	display:block;
+.textoFooter{
+    padding: 1rem;
 }
 
-.trabajos{
+/* estilos pagina Nuestros Trabajos */ 
+
+.fotosTortas{
     display: flex;
+    padding: rem;
+    width: 100;
+    height: 40rem;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.foto1, .foto2, .foto3, .foto4 {
+    width: 20rem;
+    height: 25rem;
+}
+
+.foto1{
+    margin-top:5rem;
+    background-image: url(../img/nuestrostrabajos1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+    
+}
+.foto2{
+    margin-top:5rem;
+    background-image: url(../img/Torta.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+
+}
+.foto3{
+    margin-top:5rem;
+    background-image: url(../img/nuestrostrabajos3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+
+}
+.foto4 {
+    margin-top:5rem;
+    background-image: url(../Img/nuestrostrabajos4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem;
+
+}
+
+/* estilos pagina Conocenos */ 
+.cajaImagenConocenos {
+    background-image: url(/Img/Aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.conocenosMicaela {
+    display: flex;
+    padding: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoMicaela {
+    width: 250px;
+    height:250px;
+    padding: 5rem;
+    background-image: url(/Img/FotoMica.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:125px;
+
+    display: flex;
+}
+
+.aboutmeMicaela {
+    padding: 2rem;
+    justify-content: center;
     flex-direction: column;
-    padding:20px;
+    width: 30%;
+
+    display: flex;
+}
+
+
+/* estilos pagina Contacto */ 
+.contenedorFormulario{
+    padding: 10rem;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formularioInput{
+    padding: 1rem;
+    width: 35rem;
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.nombreForm, .emailForm, .telefonoForm, .suscribirForm {
+    padding: 1rem;
+}
+
+.botonForm{
+    color: rgb(255, 254, 254);
+    background-color:rgb(240, 50, 91);
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
 
-/* Adaptabilidad Mobile*/
+
+/* -- Adaptabilidad Mobile -- */
 @media (max-width: 576px) {
-
-     header, nav, ul{
-        flex-direction:column;
-        flex-wrap:wrap;
-        align-items:center;
-        margin:0px;
-        padding:0px;
-      }
-
-    
-    header div img{
-        padding: 10px;
-        display: flex;
-        width: 40%;
-        align-self: center;
-        align-content: center;
-        margin-left: 30%;
-        margin-top: 10px;
-    }
-    
-    header{
-     display: flex;
-     width: 100%;   
-     max-width: 100vh;
-       
-    }
-    
-    .bloque1{
-        display: none;
-        }
-    
-    .bloque2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 40%;
-    }
-
-    .textoParrafo{
-        color:rgb(77, 77, 77);
-        display: flex;
-        margin-top: 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        font-size: 15px;
-        font-style: thin;
-        width: 80%;
-        text-align: left;
-    }
-
-    .botonPrincipal{
-        font-size: large;
-        display: flex;
-        margin-top: 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        border: none;
-        background-color: rgb(251, 212, 199);
-        width:200px;
-        height:30px;
-        border-radius: 20px;
-        text-align:center;
-        align-content: center;
-        box-shadow: 2px 2px rgba(155, 155, 155, 0.253);
-        text-decoration: none;
-        align-content: center;
-    }
-   
-
-    .footer{
-        background-color: rgb(233, 74, 74);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-        width: 100vh;
-        margin-bottom: 0%;
-        font-size: 10;
-        height: 4rem;
-        bottom: 0;
-        flex-direction: column;
-    }
-    
-    body footer ul {
-        display:flex;
-        align-content: center;
-        gap: 0px;
-        width: 100%;
-        margin: 0px;
-        flex-direction: column;
-        
-    }
-    
-    body footer ul li{
-        display: flex;
-        font-size: 10;
-        color:white;
-        text-decoration: none; 
-        margin: 2px;
-        margin-top: 0%;
-        flex-direction: column;
-
-    }
-    .fotosTortas{
-        margin-top: 40%;
-        padding: 5%;
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: auto;
-        grid-template-areas: "imagen1"
-                              "imagen2" 
-                              "imagen3"
-                              "imagen4";
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-   
-    section div img {
-        max-width: 100% ;
-        min-width: 100% ;
-    }
-
     
 
 }
 
-/* Adaptabilidad Tablet*/
-
+/* -- Adaptabilidad Tablet -- */
     @media (min-width: 576px) and (max-width: 992px) {
-    
-    
-        header, nav, ul{
 
-            align-items:center;
-            margin:0px;
-            padding:0px;
-            display: flex;
-            flex-direction:column;
-            flex-wrap:wrap;
-
-          }
-
-        nav ul li{
-            list-style: none;
-            display: flex;
-            gap: 10px;}
-    
-        .bloque1{
-        display: flex;
-        margin-top: 10%;
-        align-self: center;
-        }
-    
-        header div img{
-            padding: 10px;
-            display: flex;
-            width: 40%;
-            align-self: center;
-            align-content: center;
-            margin-left: 30%;
-            margin-top: 10px;
-        }
-        
-        header{
-        background-color: rgb(251, 212, 199);
-        display: flex;
-        width: 100%;     
-        }
-        
-        .bloque2 {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-    
-        .textoParrafo{
-            color:rgb(77, 77, 77);
-            display: flex;
-            margin-top: 10px;
-            margin-left: 30px;
-            margin-right: 30px;
-            margin-bottom: 30px;
-            font-size: 15px;
-            font-style: thin;
-            width: 80%;
-            text-align: left;
-        }
-    
-        .botonPrincipal{
-            font-size: large;
-            display: flex;
-            margin-top: 10px;
-            margin-left: 30px;
-            margin-right: 30px;
-            margin-bottom: 30px;
-            border: none;
-            background-color: rgb(251, 212, 199);
-            width:200px;
-            height:30px;
-            border-radius: 20px;
-            text-align:center;
-            align-content: center;
-            box-shadow: 2px 2px rgba(155, 155, 155, 0.253);
-            text-decoration: none;
-            align-content: center
-        }
-       
-    
-        .footer{
-            background-color: rgb(233, 74, 74);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-            width: 100%;
-            margin-bottom: 0%;
-            margin-top: 10rem;
-            font-size: 10;
-            height: 5rem;
-            bottom: 0;
-            flex-direction: column;
-            position: absolute;
-            
-        }
-        
-        body footer ul {
-            display: flex;
-            align-content: center;
-            gap: 0px;
-            width: 100%;
-            margin: 0px;
-            flex-direction: column;
-            position: absolute;
-        }
-        
-        body footer ul li{
-            display: flex;
-            font-size: 10;
-            color:white;
-            text-decoration: none; 
-            margin: 2px;
-            margin-top: 0%;
-            flex-direction: column;
-        }
-
-        .fotosTortas{
-            margin-top: 40%;
-            padding: 5%;
-            display: grid;
-            grid-template-rows: auto auto auto auto;
-            grid-template-columns: auto;
-            grid-template-areas: "imagen1"
-                                  "imagen2" 
-                                  "imagen3"
-                                  "imagen4";
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-             }
-       
-        section div img {
-            max-width: 100% ;
-            min-width: 100% ;
-        }
-    
-    
-    }
+}

@@ -1,102 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Img/Icono.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/main.css">
-    <title>Contacto Dolce Anima</title>
-</head>
-    <header>
-        <div class="logotipo">
-            <a href="../index.htm">
-                <img src="../Img/logoDA.png" alt="Logo Dolce Anima que te lleva al home">
-             </a>
-        </div>
- 
-        <nav>
-         <ul class="menu">
-             <li>
-                 <a href="../Pages/Nuestros_trabajos.htm">  Nuestros trabajos
-                 </a>   
-             </li>
-             
-             <li>
-                 <a href="../Pages/Conocenos.htm">Conocenos
-                 </a>  
-             </li>
-             <li>
-                 <a href="../Pages/Hace_un_pedido.htm">Hace un pedido
-                 </a> 
-             </li>
- 
-             <li>
-                 <a href="../Pages/Contacto.html">Contacto</a> 
-             </li>
-         </ul>
-        </nav>
-    </header>
-
-<body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section >
-
-        <form action="">
-        <fieldset>
-            <legend> Formulario de Contacto</legend>
-            <div>
-                <label for="nombre"> Nombre </label>
-                <input type="text" name="nombre"
-                placeholder="completa con tu nombre" autocomplete="on">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../Img/Icono.png" type="image/x-icon">
+        <link rel="stylesheet" href="../CSS/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5996dc2c47.js" crossorigin="anonymous"></script>
+        <title>Nuestros Productos Dolce Anima</title>
+    </head>
     
-                <label for="mail"> Mail </label>
-                <input type="email" name="mail"
-                placeholder="completa con tu mail" autocomplete="on">
+    <body>
+        <!--menu-->
+            <header class="header">
+                <nav class="nav">
+                    <div class="logo"> <a href="../index.htm"> <img src="../Img/logoDA.png" alt="logo"> </div> </a>
+        
+                    <ul class="ul">
+                        <li><a href="../Pages/Nuestros_trabajos.htm">Nuestros Trabajos</a></li>
+                        <li><a href="../Pages/Conocenos.htm">Conocenos</a></li>
+                        <li><a href="../Pages/Hace_un_pedido.htm">Hace un pedido</a></li>
+                        <li><a href="../Pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+             </header>
+
+
+    <!--formulario de contacto-->
+
+        <div class="contenedorFormulario" >
+
+            <form action="">
+                <fieldset>
+                    
+                    <div class="formularioInput">
+                       <div class="nombreForm">
+                            <label for="nombre"> Nombre </label>
+                            <input type="text" name="nombre"
+                            placeholder="completa con tu nombre" autocomplete="on">
+                        </div>
+
+                        <div class="emailForm">
+                            <label for="mail"> Mail </label>
+                            <input type="email" name="mail"
+                            placeholder="completa con tu mail" autocomplete="on">
+                        </div>
     
-                <label for="telefono"> Telefono </label>
-                <input type="number" name="telefono"
-                placeholder="completa con tu telefono" autocomplete="on">
-               
-                <label for="suscribir"> Quiero suscribirme y recibir promciones </label>
-                <input type="checkbox" name="suscribir">
-            </div>
-            <br>
-        <div>
-            <input type="submit">
-            <input type="reset">
-        </div>
+                        <div class="telefonoForm">
+                            <label for="telefono"> Telefono </label>
+                            <input type="number" name="telefono"
+                            placeholder="completa con tu telefono" autocomplete="on">
+                        </div>
+                        
+                        <div class="suscribirForm">
+                            <label for="suscribir"> Quiero suscribirme y recibir promciones </label>
+                            <input type="checkbox" name="suscribir">
+                        </div>
+                    </div>
+                    
+
+                    <a href="">
+                            <div class="botonForm"> Enviar </div>
+                    </a>
            
-        </fieldset>
-      </form>
+                </fieldset>
+            </form>
+        </div>
 
-</body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<footer class="piePagina"> 
-    <ul>
-       <li> Todos los derechos reservados </li>
-       <li>Herminio Malvino 2938, Córdoba, Argentina</li>
-       <li>Desarollo web | C Studio</li>
-       <li></li>
-   </ul>
-   </footer>
+    </body>
+    
+ <!--footer-->
+
+    <footer class="footer">
+        <div class="iconosFooter">
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+         <i class="fa-brands fa-instagram fa-2x"></i>
+        </div>
+    
+        <div class="textoFooter">
+            <li>Todos los derechos reservados | Dolce Anima </li>
+         </div>
+    </footer>
 
 
 </html>
