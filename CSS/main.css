@@ -27,6 +27,7 @@
     align-items: center;
 }
 
+
 li a {
     color: rgb(240, 50, 91);
     font-weight: 800;
@@ -40,7 +41,7 @@ div img {
 /* banner */ 
 
 .cajaImagen{
-    background-image: url(/Img/nuestrostrabajos2.jpg);
+    background-image: url(../Img/nuestrostrabajos2.jpg);
     padding: 10rem;
     height: 80vh;
     background-size: cover;
@@ -71,6 +72,8 @@ h1{
     display: inline-block;
     padding: 0.5rem
 }
+
+/* Home */ 
 
 .informacionHome{
     padding: 3rem;
@@ -138,6 +141,12 @@ h2{
 
 }
 
+.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
+
+}
+
 .foto1, .foto2, .foto3, .foto4 {
     width: 20rem;
     height: 25rem;
@@ -178,7 +187,7 @@ h2{
 
 /* estilos pagina Conocenos */ 
 .cajaImagenConocenos {
-    background-image: url(/Img/Aboutus.jpg);
+    background-image: url(../Img/Aboutus.jpg);
     background-size: cover;
     background-position: center;
     padding: 10rem;
@@ -200,7 +209,7 @@ h2{
     width: 250px;
     height:250px;
     padding: 5rem;
-    background-image: url(/Img/FotoMica.jpg);
+    background-image: url(../Img/FotoMica.jpg);
     background-size: cover;
     background-position: center;
     border-radius:125px;
@@ -260,13 +269,169 @@ h2{
 
 
 
-/* -- Adaptabilidad Mobile -- */
-@media (max-width: 576px) {
-    
-
-}
-
 /* -- Adaptabilidad Tablet -- */
     @media (min-width: 576px) and (max-width: 992px) {
 
+    /* Home */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    li a {
+        color: rgb(240, 50, 91);
+        font-weight: 800;
+        margin-top: 1rem;
+    }
+
+    /* banner */ 
+
+    .cajaImagen{padding: 0%;
+        background-image: url(../Img/nuestrostrabajos2.jpg);
+        padding: 10rem;
+        height: 60vh;
+        background-size: contain;
+        width: 100%;
+
+    }
+
+    /* footer */ 
+
+    .footer{
+        padding: 0%;
+        height: 7rem;
+        flex-direction: column;
+    }
+
+    .iconosFooter {
+        width: 7rem;
+        padding: 0.5rem;
+    }
+
+    .textoFooter{
+        padding: 0;
+    }
+
+    .pedidosAnticipados, .enviosMoto, .pedidosPersonalizados
+    {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border:solid;
+        }
+
+ 
+
+/* pagna Nuestros Trabajos */ 
+
+        
+    .fotosTortas{
+        display: flex;
+        padding: 5rem;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction:column;
+        margin-top: 0rem;
+    }      
+
+    .foto1, .foto2, .foto3, .foto4 {
+        width: 30rem;
+        height: 50rem;  
+    }
 }
+
+
+
+
+    
+/* -- Adaptabilidad Mobile -- */
+@media (max-width: 576px) {
+    
+    /* Home */
+    .nav {
+        display: flex;
+        background-color: antiquewhite;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    
+    .ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 7rem;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+
+    /* banner */ 
+
+    .cajaImagen{
+        background-image: none;
+        padding: 3rem;
+        height: 30vh;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .textoBanner{
+        width: 100%;    
+    }
+
+  
+    .informacionHome{ 
+        display:block;
+    }
+
+
+    /* footer */ 
+
+    .footer{
+        padding: 0%;
+        height: 7rem;
+        flex-direction: column;
+    }
+
+    .iconosFooter {
+        width: 7rem;
+        padding: 0.5rem;
+    }
+
+    .textoFooter{
+        padding: 0;
+    }
+
+/* pagna Nuestros Trabajos */ 
+
+        
+    .fotosTortas{
+        display: flex;
+        padding: 5rem;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction:column;
+        margin-top: 0rem;
+    }      
+
+    .foto1, .foto2, .foto3, .foto4 {
+        width: 30rem;
+        height: 50rem;
+    }
+
+
+
+
+    }
