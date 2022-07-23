@@ -30,47 +30,62 @@
              </header>
 
 
-    <!--formulario de contacto-->
+    <!--formulario de contacto BOOSTRAP-->
 
-        <div class="contenedorFormulario" >
+        <div class="paginaContacto">
+            <div class="contacto">
+                <div class="contactoEncabezado">
+                <h1>  Contacto</h1>
+                <p>Escribinos por e-mail o por WhatsApp y te responderemos a la brevedad. Sino, dejanos tus datos y nos pondremos en contacto. </p>
+                </div>
+            
+                <div class="whatsapp" >
+                    <i class="fa-brands fa-whatsapp fa-1x"></i>
+                    <p>.   +54 9 3513 05-9714</p>
+                </div>
 
-            <form action="">
-                <fieldset>
-                    
-                    <div class="formularioInput">
-                       <div class="nombreForm">
-                            <label for="nombre"> Nombre </label>
-                            <input type="text" name="nombre"
-                            placeholder="completa con tu nombre" autocomplete="on">
-                        </div>
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram fa-1x"></i>
+                    <p>.   @dolceanimap</p>
+                </div>
 
-                        <div class="emailForm">
-                            <label for="mail"> Mail </label>
-                            <input type="email" name="mail"
-                            placeholder="completa con tu mail" autocomplete="on">
-                        </div>
-    
-                        <div class="telefonoForm">
-                            <label for="telefono"> Telefono </label>
-                            <input type="number" name="telefono"
-                            placeholder="completa con tu telefono" autocomplete="on">
-                        </div>
-                        
-                        <div class="suscribirForm">
-                            <label for="suscribir"> Quiero suscribirme y recibir promciones </label>
-                            <input type="checkbox" name="suscribir">
-                        </div>
-                    </div>
-                    
+                <div class="email">
+                    <i class="fa-brands fa-solid fa-at fa-1x" ></i>
+                    <p>.   hola@dolceanimapasteleria.com</p>
+                </div>
 
-                    <a href="">
-                            <div class="botonForm"> Enviar </div>
-                    </a>
-           
-                </fieldset>
-            </form>
+                <div class="direccion">
+                    <i class="fa-brands fa-solid fa-location-dot fa-1x "></i>
+                    <p>.   Herminio Malvino 2938, Córdoba Capital.</p>
+                </div>
+
+                <div class="mapaContacto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.3656191301125!2d-64.21709018503378!3d-31.376480701462036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298e1d94eeb37%3A0x3290e9932db66e40!2sHerminio%20Malvino%202938%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1658618047481!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+      
+            <form class="contenedorFormulario">
+            <div class="nombreForm">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresá tu nombre"  autocomplete="on">
+            </div>
+            <div class="emailForm">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresá tu email"  autocomplete="on">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu email con nadie. </small>
+            </div>
+            <div class="telefonoForm">
+            <label for="telefono">Telefono</label>
+            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Ingresá tu teléfono"  autocomplete="on">
+            </div>
+            <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Quiero recibir información y promociones</label>
+            </div>
+            <button type="submit" class="botonForm">Enviar</button>
+        </form>
         </div>
-
+        
     </body>
     
  <!--footer-->
@@ -78,7 +93,7 @@
     <footer class="footer">
         <div class="iconosFooter">
             <i class="fa-brands fa-whatsapp fa-2x"></i>
-         <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
         </div>
     
         <div class="textoFooter">

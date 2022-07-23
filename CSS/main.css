@@ -207,12 +207,12 @@ h2{
 }
 
 .conocenosMicaela {
-    display: flex;
     padding: 7rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .fotoMicaela {
@@ -237,38 +237,71 @@ h2{
 }
 
 
-/* estilos pagina Contacto */ 
+/* estilos pagina Contacto - form BOOSTRAP*/ 
 .contenedorFormulario{
-    padding: 10rem;
+    margin-top: 14rem;
+    padding:3rem;
     height: 95vh;
-
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.formularioInput{
-    padding: 1rem;
-    width: 35rem;
-    height: 15rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: left;
     flex-direction: column;
+
+
 }
 
-.nombreForm, .emailForm, .telefonoForm, .suscribirForm {
-    padding: 1rem;
+.contacto{
+    width: 50%;
+    height: 35rem;
+    padding: 3rem;
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: left;
+    align-items: left;
+
+}
+
+
+
+.whatsapp, .instagram, .direccion, .email{
+    width: max-content;
+    height:2rem;
+
+    display: flex;
+    text-align: left;
+    
+
+}
+
+
+.paginaContacto{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    align-items: center;
+    justify-self: center
+}
+
+.mapaContacto{
+    margin-top: 1.5rem;
+}
+.nombreForm, .emailForm, .telefonoForm, .form-check  {
+    padding: 0.5rem;
 }
 
 .botonForm{
+    width: 7rem;
     color: rgb(255, 254, 254);
     background-color:rgb(240, 50, 91);
     margin-top: 1rem;
     border-radius: 5px;
     display: inline-block;
     padding: 0.5rem;
+    border: none;
 
     display: flex;
     justify-content: center;
