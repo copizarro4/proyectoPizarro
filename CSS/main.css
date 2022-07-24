@@ -14,10 +14,11 @@
 /* barra de navegacion */ 
 
 .nav {
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem 1.5rem 6rem;
-    background-color: antiquewhite;
+    background-color: #fdeee8;
     width: 100%;
     position: fixed;
 }
@@ -32,7 +33,7 @@
 
 
 li a {
-    color: rgb(240, 50, 91);
+    color: #E9494A;
     font-weight: 800;
     text-decoration: none;
     align-items: center;
@@ -40,7 +41,8 @@ li a {
 }
 
 li a:hover{
-    color: rgb(240, 50, 91);
+    color: #E9494A;
+    font-weight: bolder;
 }
 
 
@@ -51,7 +53,7 @@ div img {
 /* banner */ 
 
 .cajaImagen{
-    background-image: url(../Img/nuestrostrabajos2.jpg);
+    background-image: url(../Img/bannerHome.jpg);
     padding: 10rem;
     height: 80vh;
     background-size: cover;
@@ -62,25 +64,31 @@ div img {
 
 .textoBanner{
     width: 65%;
+    font-weight: bold;
 }
 
 h1{
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .textoBanner {
     font-size: 1.1rem;
     margin-top: 1rem;  
-    color: rgb(240, 50, 91);
+    color:  #E9494A;
 }
 
 .botonBanner{
     color: rgb(255, 254, 254);
-    background-color:rgb(240, 50, 91);
+    background-color: #E9494A;
     margin-top: 1rem;
     border-radius: 5px;
     display: inline-block;
-    padding: 0.5rem
+    padding: 0.5rem;
+    font-weight: lighter;
+}
+.botonBanner:hover{
+    font-weight: bold;
 }
 
 /* Home */ 
@@ -89,7 +97,7 @@ h1{
     padding: 3rem;
     width: 100%;
     height: 30hv;
-    color: rgb(240, 50, 91);
+    color:  #E9494A;
     font-weight: 800;
 
     display: flex;
@@ -101,6 +109,7 @@ h1{
 h2{
     font-size: 1.3rem;
     margin-top: 1.2rem;
+    font-weight: bolder;
 }
 
 .pedidosAnticipados, .enviosMoto, .pedidosPersonalizados
@@ -113,7 +122,7 @@ h2{
 
 .footer{
     padding: 0%;
-    background-color: rgb(240, 50, 91);
+    background-color:  #E9494A;
     width: 100%;
     color: white;
     height: 4rem;
@@ -124,7 +133,12 @@ h2{
     align-items: center;
 }
 
+footer div a i{
+    color: white;
+}
+
 .iconosFooter {
+    color: white;
     width: 7rem;
     align-items: center;
     padding: 1rem;
@@ -133,6 +147,15 @@ h2{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+    
+    
+}
+footer div a{
+    color: white;
+}
+
+footer div a:hover{
+    color: white;
 }
 
 .textoFooter{
@@ -196,19 +219,11 @@ h2{
 }
 
 /* estilos pagina Conocenos */ 
-.cajaImagenConocenos {
-    background-image: url(../Img/Aboutus.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 10rem;
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-}
 
 .conocenosMicaela {
-    padding: 7rem;
-
+    padding: 8rem;
+    
+    padding-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,10 +247,37 @@ h2{
     justify-content: center;
     flex-direction: column;
     width: 30%;
-
+    font-weight: bold;
     display: flex;
 }
 
+.fotoAboutDolceAnima{
+    margin: 3rem;
+    border-radius: 0.3rem;
+    width: 50%;
+    height: 30rem;
+    padding: 5rem;
+    background-image: url(../Img/Aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.textoAboutDolceAnima{
+    padding: 5rem;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+
+.aboutDolceAnima{
+    display: flex;
+    flex-direction: row;
+}
 
 /* estilos pagina Contacto - form BOOSTRAP*/ 
 .contenedorFormulario{
@@ -245,7 +287,7 @@ h2{
     width: 50%;
     display: flex;
     flex-direction: column;
-
+    font-weight: bold;
 
 }
 
@@ -253,7 +295,7 @@ h2{
     width: 50%;
     height: 35rem;
     padding: 3rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -262,9 +304,18 @@ h2{
     text-align: left;
     align-items: left;
 
+    font-weight: bold;
 }
 
 
+.fa-whatsapp, .fa-instagram, .fa-location-dot, .fa-at{
+    margin-right: 0.5rem;
+
+}
+
+.whatsapp, .instagram, .direccion, .email:hover{
+    color:#E9494A;
+}
 
 .whatsapp, .instagram, .direccion, .email{
     width: max-content;
@@ -272,10 +323,24 @@ h2{
 
     display: flex;
     text-align: left;
-    
 
 }
+ 
+body div a {
+    color: #E9494A;
+    text-decoration: none;
+    display: flex;
+}
 
+body div a:hover {
+    color: #E9494A;
+    text-decoration: none;
+    display: flex;
+}
+
+h1{
+    color: #E9494A;
+ }
 
 .paginaContacto{
     display: flex;
@@ -296,7 +361,7 @@ h2{
 .botonForm{
     width: 7rem;
     color: rgb(255, 254, 254);
-    background-color:rgb(240, 50, 91);
+    background-color: #E9494A;
     margin-top: 1rem;
     border-radius: 5px;
     display: inline-block;
@@ -312,23 +377,14 @@ h2{
 
 /* estilos pagina Pedido - BOOSTRAP */ 
 .encabezadoPedido {
-    height: 10rem;
+    height: 7rem;
 }
 
-.fotoPaginaPedidos {
-    width: 30%;
-    height: 25rem;
-    background-image: url(../Img/WhatsApp\ Image\ 2022-06-26\ at\ 8.46.26\ PM.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 0.3rem;
-    margin-bottom: 5rem;  
-    margin-left: 3rem;  
-}
 
-.textoPaginaPedido {
+.primerPasoPedido, .segundoPasoPedido {
     align-content: center;
     padding: 5rem;
+    justify-content: center;
 }
 
 
@@ -336,6 +392,9 @@ h2{
     align-items: center;
 }
 
+.carrouselPedido{
+    width: 100%;
+}
 
 
 
@@ -356,7 +415,7 @@ h2{
 
 
     li a {
-        color: rgb(240, 50, 91);
+        color:  #E9494A;
         font-weight: 800;
         margin-top: 1rem;
     }
@@ -365,13 +424,17 @@ h2{
 
     .cajaImagen{padding: 0%;
         background-image: url(../Img/nuestrostrabajos2.jpg);
-        padding: 10rem;
         height: 60vh;
         background-size: contain;
         width: 100%;
+        border: solid;
+        justify-content: center;
 
     }
 
+    .textoBanner{
+        width: 75%;
+    }
     /* footer */ 
 
     .footer{
@@ -394,7 +457,6 @@ h2{
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        border:solid;
         }
 
  
@@ -416,11 +478,56 @@ h2{
         width: 30rem;
         height: 50rem;  
     }
+
+    /* Contacto */
+    .paginaContacto{
+        flex-direction: column;
+       
+
+    }
+    
+    .contacto{
+    width: 80%;
+   
+    margin-top: 12rem;
+    }
+
+    .contenedorFormulario{
+
+    width: 80%;
+    height: fit-content;
+    margin-top: 0;
+    }
+
+    .botonForm{
+        align-self: center;
+    }
+
+    /*Conocnos*/
+    .conocenosMicaela {
+        padding: 10rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .aboutmeMicaela{
+        width: 90%;
+    }
+    .aboutDolceAnima{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .textoAboutDolceAnima{
+        width: 90%
+    }
+
+    .fotoAboutDolceAnima{
+        width: 80%;
+    }
 }
-
-
-
-
     
 /* -- Adaptabilidad Mobile -- */
 @media (max-width: 576px) {
@@ -512,4 +619,68 @@ h2{
     }
 
 
+
+    /* Contacto */
+    .paginaContacto{
+        flex-direction: column;
+        padding: 0;
+        margin: 0rem;
     }
+    
+    .contacto{
+        width: 100%;
+        margin-top: 0rem;
+        padding: 2rem;
+        height: fit-content;
+
+    }
+
+    .contenedorFormulario{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 0;
+        height: fit-content;
+
+    }
+    .botonForm{
+    align-self: center;
+    }
+
+    .mapaContacto{
+        display: none;
+    }
+
+    /*Conocnos*/
+    .conocenosMicaela {
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .aboutmeMicaela {
+        padding: 2rem;
+        justify-content: left; 
+        width: 25rem;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .aboutDolceAnima{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .textoAboutDolceAnima{
+        padding: 3rem;
+        justify-content: left; 
+        width: 25rem;
+    }
+
+    .fotoAboutDolceAnima{
+        width: 90%;
+    }
+
+}
