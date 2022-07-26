@@ -1,0 +1,77 @@
+// duda: aca iria body adelante de header y main o no es necesario?
+
+header{
+    .cajaImagen{
+    background-image: url(../Img/bannerHome.jpg);
+    background-size: cover;
+    padding: 10rem;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+        .textoBanner{
+            width: 65%;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 1rem;  
+            color: $color-principal;
+            h1{
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+            .botonBanner{
+                color: white;
+                background-color: $color-principal;
+                margin-top: 1rem;
+                border-radius: 5px;
+                display: inline-block;
+                padding: 0.5rem;
+                font-weight: lighter;
+            }
+            .botonBanner:hover{
+                font-weight: bold;
+            }
+            
+        }
+    }
+}
+
+
+
+
+main{
+    .informacionHome{
+        padding: 3rem;
+        width: 100%;
+        height: 30hv;
+        color: $color-principal;
+        font-weight: 800;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content:space-around;
+
+        .pedidosAnticipados .textoIconoAnticipacion h2{
+            font-size: 1.3rem;
+            margin-top: 1.2rem;
+            font-weight: bolder;
+        }
+        .enviosMoto .textoIconoEnvios h2{
+            font-size: 1.3rem;
+            margin-top: 1.2rem;
+            font-weight: bolder;
+        }
+        .formaPago .textoIconoPago h2{
+            font-size: 1.3rem;
+            margin-top: 1.2rem;
+            font-weight: bolder;
+        }
+        .pedidosAnticipados, .enviosMoto, .formaPago{    
+            text-align: center;
+        }
+    }
+}
+
+
+
