@@ -1,0 +1,35 @@
+main{
+    .contenedor{
+        .encabezadoPedido{
+            height: 7rem;
+        }
+        .carrouselPedido{
+            width: 100%;
+        }
+        .informacionPedido{
+            .primerPasoPedido, .segundoPasoPedido {
+                align-content: center;
+                padding: 5rem;
+                justify-content: center;
+                align-items: center;
+                font-weight: bolder;
+                h2{
+                    color: $color-principal;
+                }
+                .botonBanner{
+                    color: rgb(255, 254, 254);
+                    background-color: #E9494A;
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                    display: inline-block;
+                    padding: 0.5rem;
+                    font-weight: lighter;
+                }
+                .botonBanner:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,84 @@
+main{
+    .paginaContacto{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        align-items: center;
+        justify-self: center;
+        h1{
+            color: #E9494A;
+         }        
+        .contacto{
+            width: 50%;
+            height: 35rem;
+            padding: 3rem;
+            margin-top: 2rem;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            text-align: left;
+            align-items: left;
+        
+            font-weight: bold;
+        }
+        div a {
+            color: #E9494A;
+            text-decoration: none;
+            display: flex;
+        }
+        div a:hover {
+            color: #E9494A;
+            text-decoration: none;
+            display: flex;
+        }
+        .mapaContacto{
+            margin-top: 1.5rem;
+        }
+        .fa-whatsapp, .fa-instagram, .fa-location-dot, .fa-at{
+            margin-right: 0.5rem;
+        }
+        .whatsapp, .instagram, .direccion, .email:hover{
+            color:#E9494A;
+        }
+        .whatsapp, .instagram, .direccion, .email{
+            width: max-content;
+            height:2rem;
+            display: flex;
+            text-align: left;
+        }
+
+        
+    }
+    .contenedorFormulario{
+    margin-top: 14rem;
+    padding:3rem;
+    height: 95vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    .nombreForm, .emailForm, .telefonoForm, .form-check  {
+        padding: 0.5rem;
+    }
+    
+    .botonForm{
+        width: 7rem;
+        color: rgb(255, 254, 254);
+        background-color: #E9494A;
+        margin-top: 1rem;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 0.5rem;
+        border: none;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+}

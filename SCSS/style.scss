@@ -1,7 +1,14 @@
-@import "utilities/reset";
-@import "utilities/variables";
-@import "utilities/index";
-
+@import "base/reset";
+@import "base/variables";
+@import "base/mixin";
+@import "base/maps";
+@import "base/extend";
+@import "components/index";
+@import "components/conocenos";
+@import "components/hace_un_pedido";
+@import "components/nuestros_trabajos";
+@import "components/contacto";
+@import "components/media-queries";
 
 
 //navbar 

@@ -7,6 +7,11 @@
   list-style: none;
   font-family: 'Urbanist', sans-serif; }
 
+main .informacionHome .pedidosAnticipados .textoIconoAnticipacion h2, main .informacionHome .enviosMoto .textoIconoEnvios h2, main .informacionHome .formaPago .textoIconoPago h2 {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  font-weight: bolder; }
+
 header .cajaImagen {
   background-image: url(../Img/bannerHome.jpg);
   background-size: cover;
@@ -19,7 +24,8 @@ header .cajaImagen {
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 1rem;
-    color: #E9494A; }
+    color: #E9494A;
+    /*MAPA*/ }
     header .cajaImagen .textoBanner h1 {
       font-size: 2.5rem;
       font-weight: bold; }
@@ -29,8 +35,7 @@ header .cajaImagen {
       margin-top: 1rem;
       border-radius: 5px;
       display: inline-block;
-      padding: 0.5rem;
-      font-weight: lighter; }
+      padding: 0.5rem; }
     header .cajaImagen .textoBanner .botonBanner:hover {
       font-weight: bold; }
 
@@ -40,24 +45,362 @@ main .informacionHome {
   height: 30hv;
   color: #E9494A;
   font-weight: 800;
+  /*MIXIN*/
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-around; }
   main .informacionHome .pedidosAnticipados .textoIconoAnticipacion h2 {
-    font-size: 1.3rem;
-    margin-top: 1.2rem;
-    font-weight: bolder; }
-  main .informacionHome .enviosMoto .textoIconoEnvios h2 {
-    font-size: 1.3rem;
-    margin-top: 1.2rem;
-    font-weight: bolder; }
-  main .informacionHome .formaPago .textoIconoPago h2 {
-    font-size: 1.3rem;
-    margin-top: 1.2rem;
-    font-weight: bolder; }
+    /*EXTEND*/ }
   main .informacionHome .pedidosAnticipados, main .informacionHome .enviosMoto, main .informacionHome .formaPago {
     text-align: center; }
+
+main .conocenosMicaela {
+  padding: 8rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main .conocenosMicaela .fotoMicaela {
+    width: 250px;
+    height: 250px;
+    padding: 5rem;
+    background-image: url(../Img/FotoMica.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 125px;
+    display: flex; }
+  main .conocenosMicaela .aboutmeMicaela {
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    font-weight: bold;
+    display: flex; }
+
+main .aboutDolceAnima {
+  display: flex;
+  flex-direction: row; }
+  main .aboutDolceAnima .fotoAboutDolceAnima {
+    margin: 3rem;
+    border-radius: 0.3rem;
+    width: 50%;
+    height: 30rem;
+    padding: 5rem;
+    background-image: url(../Img/Aboutus.jpg);
+    background-size: cover;
+    background-position: center; }
+  main .aboutDolceAnima .textoAboutDolceAnima {
+    padding: 5rem;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold; }
+
+main .contenedor .encabezadoPedido {
+  height: 7rem; }
+
+main .contenedor .carrouselPedido {
+  width: 100%; }
+
+main .contenedor .informacionPedido .primerPasoPedido, main .contenedor .informacionPedido .segundoPasoPedido {
+  align-content: center;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder; }
+  main .contenedor .informacionPedido .primerPasoPedido h2, main .contenedor .informacionPedido .segundoPasoPedido h2 {
+    color: #E9494A; }
+  main .contenedor .informacionPedido .primerPasoPedido .botonBanner, main .contenedor .informacionPedido .segundoPasoPedido .botonBanner {
+    color: #fffefe;
+    background-color: #E9494A;
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.5rem;
+    font-weight: lighter; }
+  main .contenedor .informacionPedido .primerPasoPedido .botonBanner:hover, main .contenedor .informacionPedido .segundoPasoPedido .botonBanner:hover {
+    font-weight: bold; }
+
+main .fotosTortas {
+  display: flex;
+  padding: rem;
+  width: 100;
+  height: 40rem;
+  align-items: center;
+  justify-content: space-around; }
+  main .fotosTortas .foto1:hover, main .fotosTortas .foto2:hover, main .fotosTortas .foto3:hover, main .fotosTortas .foto4:hover {
+    transform: scale(1.01);
+    transition: 0.5s; }
+  main .fotosTortas .foto1, main .fotosTortas .foto2, main .fotosTortas .foto3, main .fotosTortas .foto4 {
+    width: 20rem;
+    height: 25rem; }
+  main .fotosTortas .foto1 {
+    margin-top: 5rem;
+    background-image: url(../Img/nuestrostrabajos1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem; }
+  main .fotosTortas .foto2 {
+    margin-top: 5rem;
+    background-image: url(../Img/Torta.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem; }
+  main .fotosTortas .foto3 {
+    margin-top: 5rem;
+    background-image: url(../Img/nuestrostrabajos3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem; }
+  main .fotosTortas .foto4 {
+    margin-top: 5rem;
+    background-image: url(../Img/nuestrostrabajos4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.3rem; }
+
+main .paginaContacto {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  align-items: center;
+  justify-self: center; }
+  main .paginaContacto h1 {
+    color: #E9494A; }
+  main .paginaContacto .contacto {
+    width: 50%;
+    height: 35rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+    font-weight: bold; }
+  main .paginaContacto div a {
+    color: #E9494A;
+    text-decoration: none;
+    display: flex; }
+  main .paginaContacto div a:hover {
+    color: #E9494A;
+    text-decoration: none;
+    display: flex; }
+  main .paginaContacto .mapaContacto {
+    margin-top: 1.5rem; }
+  main .paginaContacto .fa-whatsapp, main .paginaContacto .fa-instagram, main .paginaContacto .fa-location-dot, main .paginaContacto .fa-at {
+    margin-right: 0.5rem; }
+  main .paginaContacto .whatsapp, main .paginaContacto .instagram, main .paginaContacto .direccion, main .paginaContacto .email:hover {
+    color: #E9494A; }
+  main .paginaContacto .whatsapp, main .paginaContacto .instagram, main .paginaContacto .direccion, main .paginaContacto .email {
+    width: max-content;
+    height: 2rem;
+    display: flex;
+    text-align: left; }
+
+main .contenedorFormulario {
+  margin-top: 14rem;
+  padding: 3rem;
+  height: 95vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold; }
+  main .contenedorFormulario .nombreForm, main .contenedorFormulario .emailForm, main .contenedorFormulario .telefonoForm, main .contenedorFormulario .form-check {
+    padding: 0.5rem; }
+  main .contenedorFormulario .botonForm {
+    width: 7rem;
+    color: #fffefe;
+    background-color: #E9494A;
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+/* -- Adaptabilidad Tablet -- */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* Home */
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  li a {
+    color: #E9494A;
+    font-weight: 800;
+    margin-top: 1rem; }
+  /* banner */
+  .cajaImagen {
+    padding: 0%;
+    background-image: url(../Img/nuestrostrabajos2.jpg);
+    height: 60vh;
+    background-size: contain;
+    width: 100%;
+    border: solid;
+    justify-content: center; }
+  .textoBanner {
+    width: 75%; }
+  /* footer */
+  .footer {
+    padding: 0%;
+    height: 7rem;
+    flex-direction: column; }
+  .iconosFooter {
+    width: 7rem;
+    padding: 0.5rem; }
+  .textoFooter {
+    padding: 0; }
+  .pedidosAnticipados, .enviosMoto, .pedidosPersonalizados {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  /* pagna Nuestros Trabajos */
+  .fotosTortas {
+    display: flex;
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0rem; }
+  .foto1, .foto2, .foto3, .foto4 {
+    width: 30rem;
+    height: 50rem; }
+  /* Contacto */
+  .paginaContacto {
+    flex-direction: column; }
+  .contacto {
+    width: 80%;
+    margin-top: 12rem; }
+  .contenedorFormulario {
+    width: 80%;
+    height: fit-content;
+    margin-top: 0; }
+  .botonForm {
+    align-self: center; }
+  /*Conocnos*/
+  .conocenosMicaela {
+    padding: 10rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .aboutmeMicaela {
+    width: 90%; }
+  .aboutDolceAnima {
+    flex-direction: column-reverse;
+    align-items: center; }
+  .textoAboutDolceAnima {
+    width: 90%; }
+  .fotoAboutDolceAnima {
+    width: 80%; } }
+
+/* -- Adaptabilidad Mobile -- */
+@media (max-width: 576px) {
+  /* Home */
+  .nav {
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem; }
+  .ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7rem;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem; }
+  /* banner */
+  .cajaImagen {
+    background-image: none;
+    padding: 3rem;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+  .textoBanner {
+    width: 100%; }
+  .informacionHome {
+    display: block; }
+  /* footer */
+  .footer {
+    padding: 0%;
+    height: 7rem;
+    flex-direction: column; }
+  .iconosFooter {
+    width: 7rem;
+    padding: 0.5rem; }
+  .textoFooter {
+    padding: 0; }
+  /* pagna Nuestros Trabajos */
+  .fotosTortas {
+    display: flex;
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0rem; }
+  .foto1, .foto2, .foto3, .foto4 {
+    width: 30rem;
+    height: 50rem; }
+  /* pagna Pedidos */
+  .fotoPaginaPedidos, .encabezadoPedido {
+    display: none; }
+  /* Contacto */
+  .paginaContacto {
+    flex-direction: column;
+    padding: 0;
+    margin: 0rem; }
+  .contacto {
+    width: 100%;
+    margin-top: 0rem;
+    padding: 2rem;
+    height: fit-content; }
+  .contenedorFormulario {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 0;
+    height: fit-content; }
+  .botonForm {
+    align-self: center; }
+  .mapaContacto {
+    display: none; }
+  /*Conocnos*/
+  .conocenosMicaela {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0; }
+  .aboutmeMicaela {
+    padding: 2rem;
+    justify-content: left;
+    width: 25rem;
+    font-weight: bold;
+    display: flex; }
+  .aboutDolceAnima {
+    flex-direction: column-reverse;
+    align-items: center; }
+  .textoAboutDolceAnima {
+    padding: 3rem;
+    justify-content: left;
+    width: 25rem; }
+  .fotoAboutDolceAnima {
+    width: 90%; } }
 
 header nav {
   z-index: 100;

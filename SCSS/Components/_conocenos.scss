@@ -1,0 +1,48 @@
+
+main {
+    .conocenosMicaela{
+        padding: 8rem;    
+        padding-bottom: 3rem;
+        @include flex-row;
+        .fotoMicaela {
+        width: 250px;
+        height:250px;
+        padding: 5rem;
+        background-image: url(../Img/FotoMica.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius:125px;
+        display: flex;
+        }
+        .aboutmeMicaela {
+        padding: 2rem;
+        justify-content: center;
+        flex-direction: column;
+        width: 30%;
+        font-weight: bold;
+        display: flex;
+        }
+    }
+    .aboutDolceAnima{
+        display: flex;
+        flex-direction: row;
+        .fotoAboutDolceAnima{
+            margin: 3rem;
+            border-radius: 0.3rem;
+            width: 50%;
+            height: 30rem;
+            padding: 5rem;
+            background-image: url(../Img/Aboutus.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .textoAboutDolceAnima{
+            padding: 5rem;
+            width: 60%;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: bold;
+        }
+    }
+}

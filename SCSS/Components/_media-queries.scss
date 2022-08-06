@@ -1,0 +1,283 @@
+
+/* -- Adaptabilidad Tablet -- */
+@media (min-width: 576px) and (max-width: 992px) {
+
+    /* Home */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    li a {
+        color:  #E9494A;
+        font-weight: 800;
+        margin-top: 1rem;
+    }
+
+    /* banner */ 
+
+    .cajaImagen{padding: 0%;
+        background-image: url(../Img/nuestrostrabajos2.jpg);
+        height: 60vh;
+        background-size: contain;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+
+    }
+
+    .textoBanner{
+        width: 75%;
+    }
+    /* footer */ 
+
+    .footer{
+        padding: 0%;
+        height: 7rem;
+        flex-direction: column;
+    }
+
+    .iconosFooter {
+        width: 7rem;
+        padding: 0.5rem;
+    }
+
+    .textoFooter{
+        padding: 0;
+    }
+
+    .pedidosAnticipados, .enviosMoto, .pedidosPersonalizados
+    {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        }
+
+ 
+
+/* pagna Nuestros Trabajos */ 
+
+        
+    .fotosTortas{
+        display: flex;
+        padding: 5rem;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction:column;
+        margin-top: 0rem;
+    }      
+
+    .foto1, .foto2, .foto3, .foto4 {
+        width: 30rem;
+        height: 50rem;  
+    }
+
+    /* Contacto */
+    .paginaContacto{
+        flex-direction: column;
+       
+
+    }
+    
+    .contacto{
+    width: 80%;
+   
+    margin-top: 12rem;
+    }
+
+    .contenedorFormulario{
+
+    width: 80%;
+    height: fit-content;
+    margin-top: 0;
+    }
+
+    .botonForm{
+        align-self: center;
+    }
+
+    /*Conocnos*/
+    .conocenosMicaela {
+        padding: 10rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .aboutmeMicaela{
+        width: 90%;
+    }
+    .aboutDolceAnima{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .textoAboutDolceAnima{
+        width: 90%
+    }
+
+    .fotoAboutDolceAnima{
+        width: 80%;
+    }
+}
+    
+/* -- Adaptabilidad Mobile -- */
+@media (max-width: 576px) {
+    
+    /* Home */
+    .nav {
+        display: flex;
+        background-color: antiquewhite;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    
+    .ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 7rem;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+
+    /* banner */ 
+
+    .cajaImagen{
+        background-image: none;
+        padding: 3rem;
+        height: 30vh;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .textoBanner{
+        width: 100%;    
+    }
+
+  
+    .informacionHome{ 
+        display:block;
+    }
+
+
+    /* footer */ 
+
+    .footer{
+        padding: 0%;
+        height: 7rem;
+        flex-direction: column;
+    }
+
+    .iconosFooter {
+        width: 7rem;
+        padding: 0.5rem;
+    }
+
+    .textoFooter{
+        padding: 0;
+    }
+
+/* pagna Nuestros Trabajos */ 
+
+        
+    .fotosTortas{
+        display: flex;
+        padding: 5rem;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction:column;
+        margin-top: 0rem;
+    }      
+
+    .foto1, .foto2, .foto3, .foto4 {
+        width: 30rem;
+        height: 50rem;
+    }
+
+/* pagna Pedidos */ 
+
+    .fotoPaginaPedidos, .encabezadoPedido {
+        display: none
+    }
+
+
+
+    /* Contacto */
+    .paginaContacto{
+        flex-direction: column;
+        padding: 0;
+        margin: 0rem;
+    }
+    
+    .contacto{
+        width: 100%;
+        margin-top: 0rem;
+        padding: 2rem;
+        height: fit-content;
+
+    }
+
+    .contenedorFormulario{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 0;
+        height: fit-content;
+
+    }
+    .botonForm{
+    align-self: center;
+    }
+
+    .mapaContacto{
+        display: none;
+    }
+
+    /*Conocnos*/
+    .conocenosMicaela {
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .aboutmeMicaela {
+        padding: 2rem;
+        justify-content: left; 
+        width: 25rem;
+        font-weight: bold;
+        display: flex;
+    }
+
+    .aboutDolceAnima{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .textoAboutDolceAnima{
+        padding: 3rem;
+        justify-content: left; 
+        width: 25rem;
+    }
+
+    .fotoAboutDolceAnima{
+        width: 90%;
+    }
+
+}

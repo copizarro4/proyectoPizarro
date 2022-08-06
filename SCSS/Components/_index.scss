@@ -1,4 +1,3 @@
-// duda: aca iria body adelante de header y main o no es necesario?
 
 header{
     .cajaImagen{
@@ -19,15 +18,18 @@ header{
                 font-size: 2.5rem;
                 font-weight: bold;
             }
+
+            /*MAPA*/
             .botonBanner{
-                color: white;
+                color: map-get($boton-principal, color-tipografia);
                 background-color: $color-principal;
-                margin-top: 1rem;
-                border-radius: 5px;
-                display: inline-block;
-                padding: 0.5rem;
-                font-weight: lighter;
+                margin-top: map-get($boton-principal, margenes-boton);
+                border-radius: map-get($boton-principal, radio);
+                display: map-get($boton-principal, display-boton);
+                padding: map-get($boton-principal, padding-boton);
+                font-weight: map-get($boton-principal, fuente);
             }
+
             .botonBanner:hover{
                 font-weight: bold;
             }
@@ -37,8 +39,6 @@ header{
 }
 
 
-
-
 main{
     .informacionHome{
         padding: 3rem;
@@ -46,32 +46,22 @@ main{
         height: 30hv;
         color: $color-principal;
         font-weight: 800;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        /*MIXIN*/
+        @include flex-row;
         justify-content:space-around;
 
         .pedidosAnticipados .textoIconoAnticipacion h2{
-            font-size: 1.3rem;
-            margin-top: 1.2rem;
-            font-weight: bolder;
+            /*EXTEND*/
+            @extend %iconos-home;
         }
         .enviosMoto .textoIconoEnvios h2{
-            font-size: 1.3rem;
-            margin-top: 1.2rem;
-            font-weight: bolder;
+            @extend %iconos-home;
         }
         .formaPago .textoIconoPago h2{
-            font-size: 1.3rem;
-            margin-top: 1.2rem;
-            font-weight: bolder;
+            @extend %iconos-home;
         }
         .pedidosAnticipados, .enviosMoto, .formaPago{    
             text-align: center;
         }
     }
 }
-
-
-
