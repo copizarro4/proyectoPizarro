@@ -1,6 +1,8 @@
 
 main {
+    font-weight: light;
     .conocenosMicaela{
+        font-weight: light;
         padding: 8rem;    
         padding-bottom: 3rem;
         @include flex-row;
@@ -15,22 +17,23 @@ main {
         display: flex;
         }
         .aboutmeMicaela {
+            h1{
+                @include titulo-principal;
+            }
         padding: 2rem;
         justify-content: center;
         flex-direction: column;
-        width: 30%;
+        width: 40%;
         font-weight: bold;
         display: flex;
         }
     }
-    .aboutDolceAnima{
+    .conocenosDolceAnima{
         display: flex;
-        flex-direction: row;
         .fotoAboutDolceAnima{
             margin: 3rem;
             border-radius: 0.3rem;
             width: 50%;
-            height: 30rem;
             padding: 5rem;
             background-image: url(../Img/Aboutus.jpg);
             background-size: cover;
@@ -38,6 +41,9 @@ main {
         
         }
         .textoAboutDolceAnima{
+            h2{
+                @include titulo-secundario;
+            }
             padding: 5rem;
             width: 60%;
             justify-content: center;
@@ -46,3 +52,94 @@ main {
         }
     }
 }
+
+
+/* -- Adaptabilidad Tablet -- */
+@media (min-width: 576px) and (max-width: 992px){
+    .conocenosMicaela {
+        padding: 10rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .aboutmeMicaela{
+            text-align: center;
+            width: 90%;
+            flex-direction: column;
+            p{
+                width: 25rem;
+                align-self: center;
+            }
+        }
+    }
+    .conocenosDolceAnima{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        .textoAboutDolceAnima{
+            display: flex;
+            width: 30rem;
+            padding: 0;
+            margin: 0;
+            p, h2{
+                width: 25rem;
+                align-self: center;
+            }
+        }
+    
+        .fotoAboutDolceAnima{
+            width: 20vh;
+         }
+    }
+}
+
+ 
+
+/* -- Adaptabilidad Mobile -- */
+@media (max-width: 576px) {
+
+    .conocenosMicaela {
+        padding: 10rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .aboutmeMicaela{
+            text-align: center;
+            width: 90%;
+            flex-direction: column;
+            p{
+                width: 25rem;
+                align-self: center;
+            }
+        }
+    }
+    
+    .conocenosDolceAnima{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        .textoAboutDolceAnima{
+            display: flex;
+            width: 30rem;
+            padding: 0;
+            margin: 0;
+            p, h2{
+                width: 25rem;
+                align-self: center;
+            }
+        }
+    
+        .fotoAboutDolceAnima{
+            width: 20vh;
+         }
+    }
+}
+
+
+
+

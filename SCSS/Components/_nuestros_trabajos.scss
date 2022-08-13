@@ -1,52 +1,40 @@
 
-main{
-    .fotosTortas{
-        display: flex;
-        padding: rem;
-        width: 100;
-        height: 40rem;
-        align-items: center;
-        justify-content: space-around;
-        .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover {
-            transform: scale(1.01);
-            transition: 0.5s;
-        }
-        .foto1, .foto2, .foto3, .foto4 {
-            width: 20rem;
-            height: 25rem;
-        }
-        .foto1{
-            margin-top:5rem;
-            background-image: url(../Img/nuestrostrabajos1.jpg);
-            background-size: cover;
-            background-position: center;
-            border-radius: 0.3rem;
-        }
-        .foto2{
-            margin-top:5rem;
-            background-image: url(../Img/Torta.jpg);
-            background-size: cover;
-            background-position: center;
-            border-radius: 0.3rem;
-        }
-        .foto3{
-            margin-top:5rem;
-            background-image: url(../Img/nuestrostrabajos3.jpg);
-            background-size: cover;
-            background-position: center;
-            border-radius: 0.3rem;
-        }
-        .foto4 {
-            margin-top:5rem;
-            background-image: url(../Img/nuestrostrabajos4.jpg);
-            background-size: cover;
-            background-position: center;
-            border-radius: 0.3rem;
-        }
+.gallery {
+  padding: 0 0 4rem 0;
+  .img-container {
+    width: 100%;
+    height: 500px;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover .img-content-hover {
+      display: block;
+    }
+    img {
+        width: 100%;
+      height: 500px;
+        object-fit: cover;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .img-content-hover {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        display: none;
+        padding: 1rem;
+        font-weight: 400;
+        margin-top: 1.25rem;
+        margin-left: -2rem;
+      }
 
     }
-
 }
+
 
 
 

@@ -5,3 +5,15 @@
     justify-content: center;
 
 }
+
+@mixin titulo-principal {
+    color: $color-principal;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@mixin titulo-secundario {
+    color: $color-principal;
+    font-size: 2rem;
+    font-weight: bold;
+}

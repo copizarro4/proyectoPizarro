@@ -20,94 +20,84 @@
     <script src="https://kit.fontawesome.com/5996dc2c47.js" crossorigin="anonymous"></script>
     <title>Dolce Anima - Hacé un pedido</title>
 </head>
-<body>
 
-    <!--menu-->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo"> <a href="../index.htm"> <img src="../Img/logoDA.png" alt="logo"> </div> </a>
-        
-            <ul class="ul">
-                <li><a href="../Pages/Nuestros_trabajos.htm">Nuestros Trabajos</a></li>
-                <li><a href="../Pages/Conocenos.htm">Conocenos</a></li>
-                <li><a href="../Pages/Hace_un_pedido.htm">Hace un pedido</a></li>
-                <li><a href="../Pages/Contacto.html">Contacto</a></li>
-            </ul>
+
+
+<body>
+    <!--menu-->    
+    <header class="header" >
+        <nav class="navbar navbar-expand-lg  " style="background-color: #fdeee8;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse container-fuid navbar-collapse" id="navbarTogglerDemo01">
+                <div class="logo col-6"> <a href="../index.htm"> <img src="../Img/logoDA.png"    alt="logo">  </a></div>
+              <ul class="navbar-nav col-4 mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Nuestros_trabajos.htm">Nuestros Trabajos</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/Hace_un_pedido.htm">Hacé un pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/Conocenos.htm">Conocenos</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/Contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
         </nav>
+
     </header>
 
-    <main>
-        <div class="container-fluid contenedor">
-           
-            <div class="row encabezadoPedido">
-                <div class="col12">
-                </div>
-            </div>
-            
-            <div id="carouselExampleControls col-12" class="carousel slide carrouselPedido" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="../Img/bannerComoPedir1.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="../Img/bannerComoPedir2.jpg" alt="Second slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
+    <!--main-->
 
-            <div class="row informacionPedido">
-                    
-                <div class= "primerPasoPedido col-sm-12 col-md-6 col-lg-6"> 
-                    <h2 class="h1Banner">Descargá el catálogo</h2>
-                    <p class="textoBanner">En el siguiente link vas a encontrar un catálogo online donde podés ver todos nuestros productos y variedades disponibles.</p>
-                    <a href="https://drive.google.com/file/d/19zqMvjwCEnA21D_epsNbYmgeU__6LDD_/view?usp=drivesdk" target="_blank">
-                       <div class="botonBanner"> Descargá el catálogo</div>
-                    </a>
-                    </p>
-                </div>
+  <main>
+    <div class="bannerPedido animate__animated animate__fadeIn">
+     
+    </div>
 
-                <div class= "segundoPasoPedido col-sm-12 col-md-6 col-lg-6"> 
-                    <h2 class="h1Banner">Escrbinos para hacer tu pedido!</h2>
-                    <p class="textoBanner">¿Ya tenés tu pedido? Escribinos por WhatsApp para poder agendarlo. No olvides aclarar los rellenos, tamaños y si precisás envío. .</p>
-                    <a href="https://drive.google.com/file/d/19zqMvjwCEnA21D_epsNbYmgeU__6LDD_/view?usp=drivesdk" target="_blank">
-                       <div class="botonBanner"> Hacé tu pedido!</div>
-                    </a>
-                    </p>
-                </div>
-
-            </div>
-
-            
-
-                 <!--footer-->
-
-            <div class="row">
-                <footer class="col-12 footer">
-                    <div class="iconosFooter">
-                        <a href="https://api.whatsapp.com/send/?phone=543513059714&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-                        <a href="https://www.instagram.com/dolceanimap/" target="_blank"> <i class="fa-brands fa-instagram fa-2x"></i></a>
-                    </div>
-
-                    <div class="textoFooter">
-                        <li>Todos los derechos reservados | Dolce Anima </li>
-                    </div>
-                </footer>
-            </div>
-
+    <div class="informacionPedido animate__animated animate__fadeIn">      
+        <div class= "primerPasoPedido"> 
+          <h1 class="h1Banner">Descargá el catálogo</h1>
+           <p class="textoBanner">En el siguiente link vas a encontrar un catálogo online donde podés ver todos nuestros productos y variedades disponibles.</p>
+           <a href="https://drive.google.com/file/d/19zqMvjwCEnA21D_epsNbYmgeU__6LDD_/view?usp=drivesdk" target="_blank">
+             <div class="botonPedido"> Descargá el catálogo</div>
+           </a>
         </div>
 
+        <div class= "segundoPasoPedido animate__animated animate__fadeIn"> 
+          <h2 class="h1Banner">Escrbinos para hacer tu pedido!</h2>
+            <p class="textoBanner">¿Ya tenés tu pedido? Escribinos por WhatsApp para poder agendarlo. No olvides aclarar los rellenos, tamaños y si precisás envío. .</p>
+            <a href="https://drive.google.com/file/d/19zqMvjwCEnA21D_epsNbYmgeU__6LDD_/view?usp=drivesdk" target="_blank">
+              <div class="botonPedido"> Hacé tu pedido!</div>
+            </a>
+        </div>
+
+      </div>
     </main>
+            
+
+  <!--footer-->
+
+  <footer class="footer">
+    <div class="iconosFooter">
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+    </div>
+
+    <div class="textoFooter">
+        <li>Todos los derechos reservados | Dolce Anima </li>
+    </div>
+  </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--Java-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
