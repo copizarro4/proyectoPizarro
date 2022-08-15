@@ -23,19 +23,13 @@ header {
                 margin-left: 3rem;
                 padding: 0.5rem;  
             }
-        .navbar-toggler-icon{
-                color: $color-principal;
-            }
         .navbar-nav{
             display: flex;
             justify-content: space-around;
             width: 35rem;
-            justify-items: center;
-            align-items: center;
             li a {
                 color: $color-principal;
                 font-weight: 800;
-                align-items: center; 
                 padding: 0rem;
                 margin-left: 1.5rem;
             }     
@@ -93,9 +87,27 @@ header {
 /* ADAPTABILIDAD TABLET */
 
 
-// PIE DE PÁGINA
 @media (min-width: 576px) and (max-width: 992px) {
-    .footer{
+
+  
+//BARRA DE NAVEGACIÓN
+
+header {
+    .navbar{
+        .navbar-nav{
+            display: flex;
+            justify-content: baseline;
+            width: 100%;
+            justify-items: none;
+            align-items: none;
+        }
+
+    }
+
+}
+
+    // PIE DE PÁGINA
+.footer{
         padding: 0%;
         height: 7rem;
         flex-direction: column;
