@@ -109,10 +109,10 @@ main {
         align-items: center;
         .aboutmeMicaela{
             text-align: center;
-            width: 90%;
+            width: 80%;
             flex-direction: column;
             p{
-                width: 25rem;
+                width: 23rem;
                 align-self: center;
             }
         }
@@ -125,17 +125,19 @@ main {
         margin: 0px;
         .textoAboutDolceAnima{
             display: flex;
-            width: 30rem;
+            width: 22rem;
             padding: 0;
             margin: 0;
             p, h2{
-                width: 25rem;
+                width: 22rem;
                 align-self: center;
             }
         }
     
         .fotoAboutDolceAnima{
-            width: 20vh;
+            img{
+                width: 20rem;
+            }
          }
     }
 }

@@ -195,10 +195,10 @@ main {
     align-items: center; }
     .conocenosMicaela .aboutmeMicaela {
       text-align: center;
-      width: 90%;
+      width: 80%;
       flex-direction: column; }
       .conocenosMicaela .aboutmeMicaela p {
-        width: 25rem;
+        width: 23rem;
         align-self: center; }
   .conocenosDolceAnima {
     flex-direction: column-reverse;
@@ -207,14 +207,14 @@ main {
     margin: 0px; }
     .conocenosDolceAnima .textoAboutDolceAnima {
       display: flex;
-      width: 30rem;
+      width: 22rem;
       padding: 0;
       margin: 0; }
       .conocenosDolceAnima .textoAboutDolceAnima p, .conocenosDolceAnima .textoAboutDolceAnima h2 {
-        width: 25rem;
+        width: 22rem;
         align-self: center; }
-    .conocenosDolceAnima .fotoAboutDolceAnima {
-      width: 20vh; } }
+    .conocenosDolceAnima .fotoAboutDolceAnima img {
+      width: 20rem; } }
 
 main .bannerPedido {
   background-image: url(../Img/bannerComoPedir2.jpg);
